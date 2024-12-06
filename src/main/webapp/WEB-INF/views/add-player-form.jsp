@@ -27,6 +27,12 @@
     Right-handed:<form:radiobutton path="handedness" value="Right-Handed"/>&emsp;
     Ambidextrous:<form:radiobutton path="handedness" value="Ambidextrous"/>&emsp;
 
+    <br><br>
+    Grand Slam Titles Won:
+    Australian Open <form:checkbox path="grandSlams" value="Australian Open"/>
+    French Open <form:checkbox path="grandSlams" value="French Open"/>
+    Wimbledon <form:checkbox path="grandSlams" value="Wimbledon"/>
+    US Open <form:checkbox path="grandSlams" value="US Open"/>
 
     <br><br>
     <input type="submit" value="Add Player"/>

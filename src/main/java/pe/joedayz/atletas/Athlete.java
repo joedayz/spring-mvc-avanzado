@@ -11,6 +11,7 @@ public class Athlete {
   private String lastName;
   private String country;
   private String handedness;
+  private String[] grandSlams;
 
   public Athlete() {
   }
@@ -37,5 +38,13 @@ public class Athlete {
 
   public void setHandedness(String handedness) {
     this.handedness = handedness;
+  }
+
+  public String[] getGrandSlams() {
+    return grandSlams;
+  }
+
+  public void setGrandSlams(String[] grandSlams) {
+    this.grandSlams = grandSlams;
   }
 }

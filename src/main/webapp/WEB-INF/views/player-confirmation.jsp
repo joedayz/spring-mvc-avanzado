@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,6 +18,14 @@ Country: ${athlete.country}
 
     <br><br>
 Handedness: ${athlete.handedness}
+
+    <br><br>
+Grand Slam Titles:
+<ul>
+    <c:forEach items="${athlete.grandSlams}" var="title">
+        <li>${title}</li>
+    </c:forEach>
+</ul>
 
 </body>
 </html>
