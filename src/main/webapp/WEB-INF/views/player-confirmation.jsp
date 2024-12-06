@@ -27,5 +27,8 @@ Grand Slam Titles:
     </c:forEach>
 </ul>
 
+<br><br>
+<b>Current Rank</b>: ${athlete.rank}
+
 </body>
 </html>

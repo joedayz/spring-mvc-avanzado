@@ -20,7 +20,7 @@
     First Name: <form:input path="firstName"/>
 
     <br><br>
-    Last Name: <form:input path="lastName"/>
+    Last Name *: <form:input path="lastName"/>
     <form:errors path="lastName" cssClass="error"/>
 
     <br><br>
@@ -44,6 +44,10 @@
     French Open <form:checkbox path="grandSlams" value="French Open"/>
     Wimbledon <form:checkbox path="grandSlams" value="Wimbledon"/>
     US Open <form:checkbox path="grandSlams" value="US Open"/>
+
+    <br><br>
+    Current Rank *: <form:input path="rank"/>
+    <form:errors path="rank" cssClass="error"/>
 
     <br><br>
     <input type="submit" value="Add Player"/>
