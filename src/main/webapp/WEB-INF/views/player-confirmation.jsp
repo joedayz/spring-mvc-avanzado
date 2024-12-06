@@ -12,5 +12,7 @@ The player has been added.
 <br><br>
 Name: ${athlete.lastName}
 
+    <br><br>
+Country: ${athlete.country}
 </body>
 </html>

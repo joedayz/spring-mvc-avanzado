@@ -13,6 +13,15 @@
     Name: <form:input path="lastName"/>
 
     <br><br>
+    Country: <form:select path="country">
+    <form:option value="AUT" label="Austria"/>
+    <form:option value="FRA" label="France"/>
+    <form:option value="SRB" label="Serbia"/>
+    <form:option value="SUI" label="Switzerland"/>
+    <form:option value="USA" label="United States of America"/>
+    </form:select>
+
+    <br><br>
     <input type="submit" value="Add Player"/>
 </form:form>
 </body>
