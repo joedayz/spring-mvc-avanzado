@@ -3,6 +3,9 @@ package pe.joedayz.atletas;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Past;
+import java.util.Date;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Component;
 import jakarta.validation.constraints.Size;
 
@@ -21,6 +24,10 @@ public class Athlete {
   private String handedness;
   private String[] grandSlams;
 
+  @DateTimeFormat(pattern = "dd-MM-yyyy")
+  @Past
+  private Date lastWon;
+
   @NotNull(message = "This is a required field")
   @Min(value=1, message="Value must be greater than or equal to 1.")
   @Max(value = 100, message = "Value must be less than or equal to 100.")
@@ -29,6 +36,14 @@ public class Athlete {
   public Athlete() {
   }
 
+
+  public Date getLastWon() {
+    return lastWon;
+  }
+
+  public void setLastWon(Date lastWon) {
+    this.lastWon = lastWon;
+  }
 
   public Integer getRank() {
     return rank;

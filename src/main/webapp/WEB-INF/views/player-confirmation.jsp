@@ -1,4 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,6 +30,9 @@ Grand Slam Titles:
 
 <br><br>
 <b>Current Rank</b>: ${athlete.rank}
+
+<br><br>
+<b>Last Won</b>: <fmt:formatDate value="${athlete.lastWon}" type="date" pattern="dd-MM-yyyy"/>
 
 </body>
 </html>
