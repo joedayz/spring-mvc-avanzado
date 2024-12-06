@@ -1,5 +1,8 @@
 package pe.joedayz.atletas;
 
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import org.springframework.stereotype.Component;
 
 /**
@@ -8,6 +11,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class Athlete {
 
+  private String firstName;
+  //@NotNull(message = "This is a required field")
+  //@Size(min=1, message="This is a required field.")
+  @NotEmpty(message = "This is required field")
   private String lastName;
   private String country;
   private String handedness;
@@ -46,5 +53,13 @@ public class Athlete {
 
   public void setGrandSlams(String[] grandSlams) {
     this.grandSlams = grandSlams;
+  }
+
+  public String getFirstName() {
+    return firstName;
+  }
+
+  public void setFirstName(String firstName) {
+    this.firstName = firstName;
   }
 }

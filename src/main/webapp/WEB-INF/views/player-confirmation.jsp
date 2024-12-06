@@ -11,7 +11,7 @@
 The player has been added.
 
 <br><br>
-Name: ${athlete.lastName}
+Name: ${athlete.firstName} ${athlete.lastName}
 
     <br><br>
 Country: ${athlete.country}

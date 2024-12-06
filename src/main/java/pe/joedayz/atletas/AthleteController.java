@@ -1,8 +1,10 @@
 package pe.joedayz.atletas;
 
+import jakarta.validation.Valid;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -20,7 +22,11 @@ public class AthleteController {
     return "add-player-form";
   }
   @RequestMapping("/processPlayerForm")
-  public String processForm(@ModelAttribute("athlete") Athlete athlete){
-    return "player-confirmation";
+  public String processForm(@Valid @ModelAttribute("athlete") Athlete athlete, BindingResult result){
+    if(result.hasErrors()){
+      return "add-player-form";
+    }else{
+      return "player-confirmation";
+    }
   }
 }
