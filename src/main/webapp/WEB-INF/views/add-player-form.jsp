@@ -22,6 +22,13 @@
     </form:select>
 
     <br><br>
+    Handedness: &emsp;
+    Left-handed: <form:radiobutton path="handedness" value="Left-Handed"/>&emsp;
+    Right-handed:<form:radiobutton path="handedness" value="Right-Handed"/>&emsp;
+    Ambidextrous:<form:radiobutton path="handedness" value="Ambidextrous"/>&emsp;
+
+
+    <br><br>
     <input type="submit" value="Add Player"/>
 </form:form>
 </body>

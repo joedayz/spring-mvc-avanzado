@@ -14,5 +14,9 @@ Name: ${athlete.lastName}
 
     <br><br>
 Country: ${athlete.country}
+
+    <br><br>
+Handedness: ${athlete.handedness}
+
 </body>
 </html>

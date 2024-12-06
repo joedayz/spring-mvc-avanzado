@@ -10,6 +10,7 @@ public class Athlete {
 
   private String lastName;
   private String country;
+  private String handedness;
 
   public Athlete() {
   }
@@ -28,5 +29,13 @@ public class Athlete {
 
   public void setCountry(String country) {
     this.country = country;
+  }
+
+  public String getHandedness() {
+    return handedness;
+  }
+
+  public void setHandedness(String handedness) {
+    this.handedness = handedness;
   }
 }

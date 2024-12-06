@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IndexController {
 
-  @RequestMapping(value = "/")
+  @RequestMapping(value = "/") //http://localhost:8080
 //	@ResponseBody
   public String welcome() {
     return "main-menu";
