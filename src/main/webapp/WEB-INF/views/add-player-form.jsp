@@ -55,6 +55,10 @@
     <form:errors path="lastWon" cssClass="error"/>
 
     <br><br>
+
+    Prize Money(USD): <form:input path="prizeMoney" placeholder="$#,###,###"/>
+    <form:errors path="prizeMoney" cssClass="error"/>
+
     <input type="submit" value="Add Player"/>
 </form:form>
 </body>

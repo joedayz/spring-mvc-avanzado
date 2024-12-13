@@ -4,6 +4,7 @@ import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Past;
+import jakarta.validation.constraints.Pattern;
 import java.util.Date;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Component;
@@ -33,9 +34,21 @@ public class Athlete {
   @Max(value = 100, message = "Value must be less than or equal to 100.")
   private Integer rank;
 
+  @Pattern(regexp = "^\\$([0-9]{1,3},([0-9]{3},)*[0-9]{3})$", message = "Incorrect format")
+  private String prizeMoney;
+
+
   public Athlete() {
   }
 
+
+  public String getPrizeMoney() {
+    return prizeMoney;
+  }
+
+  public void setPrizeMoney(String prizeMoney) {
+    this.prizeMoney = prizeMoney;
+  }
 
   public Date getLastWon() {
     return lastWon;

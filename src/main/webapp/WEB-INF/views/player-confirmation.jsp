@@ -34,5 +34,8 @@ Grand Slam Titles:
 <br><br>
 <b>Last Won</b>: <fmt:formatDate value="${athlete.lastWon}" type="date" pattern="dd-MM-yyyy"/>
 
+<br><br>
+<b>Prize Money</b>: ${athlete.prizeMoney}
+
 </body>
 </html>
